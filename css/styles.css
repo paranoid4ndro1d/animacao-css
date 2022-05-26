@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+.container-amarelo {
+    height: 500px;
+    background-color: purple;
+}
+.container-azul {
+    height: 500px;
+    background-color: rgb(28, 28, 87);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.quadrado {
+    height: 400px;
+    width: 80%;
+    background-color: grey;
+    position: absolute;
+    top: -200px;
+}
+.retangulo {
+    height: 100vh;
+    width: 60px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.retangulo2 {
+    height: 60px;
+    background-color: rgb(169, 17, 17);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
