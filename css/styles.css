@@ -21,6 +21,13 @@
     background-color: rgb(100, 100, 100);
     position: absolute;
     top: -200px;
+    transition: width 0.3s ease-in 1s;
+    transition-delay: 0.3s;
+}
+.quadrado:hover {
+    height: 600px;
+    width: 85%;
+    top: -300px;
 }
 .retangulo {
     height: 100vh;
@@ -30,7 +37,7 @@
     top: 0;
     left: 0;
     z-index: 1;
-    transition: width 0.3s;
+    transition: width 0.3s ease-in 1s;
     transition-delay: 0.4s;
 }
 .retangulo:hover {
@@ -42,4 +49,34 @@
     background-color: rgb(169, 17, 17);
     position: fixed;
     top: 0;
+}
+.quadrado2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: palevioletred;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    animation-name: movimentarQuadrado;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+@keyframes movimentarQuadrado {
+    0% {
+        left: 0;
+    }
+    25% {
+        left: 200px;
+    }
+    50% {
+        left: 400px;
+    }
+    75% {
+        left: 200px;
+    }
+    100% {
+        left: 0;
+    }
 }
