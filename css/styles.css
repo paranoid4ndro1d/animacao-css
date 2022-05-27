@@ -6,7 +6,7 @@
 }
 .container-amarelo {
     height: 500px;
-    background-color: purple;
+    background-color: rgb(92, 7, 92);
 }
 .container-azul {
     height: 500px;
@@ -18,7 +18,7 @@
 .quadrado {
     height: 400px;
     width: 80%;
-    background-color: grey;
+    background-color: rgb(100, 100, 100);
     position: absolute;
     top: -200px;
 }
@@ -30,11 +30,16 @@
     top: 0;
     left: 0;
     z-index: 1;
+    transition: width 0.3s;
+    transition-delay: 0.4s;
+}
+.retangulo:hover {
+    background-color: rgb(54, 54, 54);
+    width: 300px;
 }
 .retangulo2 {
     height: 60px;
     background-color: rgb(169, 17, 17);
     position: fixed;
     top: 0;
-    z-index: 2;
 }
